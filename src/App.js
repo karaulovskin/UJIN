@@ -1,12 +1,21 @@
-import React from 'react';
-import Layout from "./hoc/Layout/Layout";
+import React from 'react'
+import Layout from './hoc/Layout/Layout'
+import {Route, Switch} from 'react-router-dom'
+import Main from './containers/Main/Main'
+import Projects from './containers/Projects/Projects'
+import Team from './containers/Team/Team'
+import Contacts from './containers/Contacts/Contacts'
 
 function App() {
     return (
         <div className="App">
             <Layout>
-                <h1>Ujin</h1>
-                <a href="https://www.instagram.com/ujin.camera/" target="_blank">instagram</a>
+                <Switch>
+                    <Route path="/projects" component={Projects} />
+                    <Route path="/team" component={Team} />
+                    <Route path="/contacts" component={Contacts} />
+                    <Route path="/" component={Main} />
+                </Switch>
             </Layout>
         </div>
     );

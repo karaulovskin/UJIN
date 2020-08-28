@@ -13,7 +13,7 @@
     flex-grow: 1;
 }
 .Layout h1 {
-    margin: 40px 0;
+    margin: 0;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Nunito', sans-serif;
@@ -28,6 +28,6 @@
     font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 200;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.2rem;
     color: white;
 }
