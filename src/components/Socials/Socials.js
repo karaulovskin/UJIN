@@ -3,8 +3,8 @@ import classes from './Socials.module.css'
 import {NavLink} from 'react-router-dom'
 
 const links = [
-    {href: 'https://www.instagram.com/ujin.camera/', label: 'Instagram'},
-    {href: 'https://www.youtube.com/channel/UCaSnDLX8osDGiND5FtBQ_DQ', label: 'Youtube'}
+    {href: 'https://www.instagram.com/ujin.camera/', label: 'Instagram', target: '_blank'},
+    {href: 'https://www.youtube.com/channel/UCaSnDLX8osDGiND5FtBQ_DQ', label: 'Youtube', target: '_blank'}
 ]
 
 class Socials extends Component {
@@ -15,6 +15,7 @@ class Socials extends Component {
                 <li key={ index }>
                     <a
                         href={ link.href }
+                        target={ link.target }
                     >
                         { link.label }
                     </a>
