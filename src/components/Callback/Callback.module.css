@@ -1,0 +1,16 @@
+.Callback {
+    height: 100%;
+    padding: 50px 60px;
+    box-shadow: 0 0 55px rgba(0,0,0,.13);
+}
+.Callback h2 {
+    margin: 0 0 45px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.2rem;
+}
+.Callback form button {
+    margin-top: 60px;
+}

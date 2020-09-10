@@ -1,19 +1,21 @@
 import React, {Component} from 'react';
-import classes from './Socials.module.css';
+import classes from './ContactsItem.module.css';
 
 const links = [
-    {href: 'https://www.instagram.com/ujin.camera/', label: 'Instagram', target: '_blank'},
-    {href: 'https://www.youtube.com/channel/UCaSnDLX8osDGiND5FtBQ_DQ', label: 'Youtube', target: '_blank'}
+    {href: 'tel:89514536212', label: '8 951 453 62 12', title: 'Телефон'},
+    {href: 'mailto:snpk88@bk.ru', label: 'snpk88@bk.ru', title: 'Email'}
 ]
 
-class Socials extends Component {
+export default class ContactsItem extends Component {
     renderLinks() {
         return links.map((link, index) => {
             return(
                 <li key={ index }>
+                    <div>
+                        { link.title }
+                    </div>
                     <a
                         href={ link.href }
-                        target={ link.target }
                     >
                         { link.label }
                     </a>
@@ -24,7 +26,7 @@ class Socials extends Component {
 
     render() {
         return (
-            <div className={classes.Socials}>
+            <div className={classes.ContactsItem}>
                 <ul>
                     { this.renderLinks() }
                 </ul>
@@ -32,5 +34,3 @@ class Socials extends Component {
         )
     }
 }
-
-export default Socials

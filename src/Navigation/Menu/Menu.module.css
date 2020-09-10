@@ -11,5 +11,12 @@
     margin-right: 70px;
 }
 .Menu ul li a {
-    letter-spacing: 0.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    color: white;
 }
