@@ -6,6 +6,7 @@
     background-color: #4f4f4f;
 }
 .Layout main {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
