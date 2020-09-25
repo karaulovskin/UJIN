@@ -1,0 +1,10 @@
+.Input {
+    margin-bottom: 40px;
+}
+.Input span {
+    font-size: 12px;
+    color: red;
+}
+.Input.invalid input {
+    color: red;
+}

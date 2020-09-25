@@ -1,0 +1,28 @@
+.Layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-color: #4f4f4f;
+}
+.Layout main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 8% 80px 100px;
+}
+.Layout h1 {
+    margin: 0 0 45px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    letter-spacing: 0.2rem;
+}
+@media (max-width: 1600px) {
+    .Layout main {
+        padding-top: 10%;
+    }
+}

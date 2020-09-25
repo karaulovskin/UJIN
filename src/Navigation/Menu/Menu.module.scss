@@ -1,0 +1,23 @@
+.Menu {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 80px;
+}
+.Menu ul {
+    display: flex;
+    align-items: center;
+}
+.Menu ul li:not(:last-child) {
+    margin-right: 70px;
+}
+.Menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    color: white;
+}

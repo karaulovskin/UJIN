@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import classes from './Menu.module.css'
+import classes from './Menu.module.scss'
 import {NavLink} from 'react-router-dom'
 
 const links = [

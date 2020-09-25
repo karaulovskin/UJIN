@@ -1,6 +1,5 @@
-import React, {Component} from 'react'
-import classes from './Socials.module.css'
-import {NavLink} from 'react-router-dom'
+import React, {Component} from 'react';
+import classes from './Socials.module.scss';
 
 const links = [
     {href: 'https://www.instagram.com/ujin.camera/', label: 'Instagram', target: '_blank'},
@@ -8,7 +7,6 @@ const links = [
 ]
 
 class Socials extends Component {
-
     renderLinks() {
         return links.map((link, index) => {
             return(
