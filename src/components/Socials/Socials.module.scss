@@ -4,6 +4,32 @@
     left: 80px;
     bottom: 50px;
 }
-.Socials li {
+.list {
 
+}
+.item {
+	&:nth-child(1) {
+		.link {
+			background-image: url("./svg/i-in.svg");
+		}
+	}
+	&:nth-child(2) {
+		.link {
+			background-image: url("./svg/i-yt.svg");
+		}
+	}
+}
+.link {
+  	display: inline-block;
+	width: 20px;
+	height: 20px;
+	font-size: 0;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-size: contain;
+  	opacity: 0.7;
+  	transition: .2s;
+  	&:hover {
+		opacity: 1;
+	}
 }

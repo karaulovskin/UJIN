@@ -4,7 +4,7 @@ import classes from './Card.module.scss'
 class Card extends Component {
     render() {
         return (
-            <div>
+            <div className={classes.Card}>
                 Card
             </div>
         )

@@ -10,8 +10,11 @@ class Socials extends Component {
     renderLinks() {
         return links.map((link, index) => {
             return(
-                <li key={ index }>
+                <li
+                    className={classes.item}
+                    key={ index } >
                     <a
+                        className={classes.link}
                         href={ link.href }
                         target={ link.target }
                     >
@@ -25,7 +28,7 @@ class Socials extends Component {
     render() {
         return (
             <div className={classes.Socials}>
-                <ul>
+                <ul className={classes.list}>
                     { this.renderLinks() }
                 </ul>
             </div>
